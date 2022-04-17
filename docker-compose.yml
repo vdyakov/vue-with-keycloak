@@ -16,9 +16,9 @@ services:
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
   keycloak:
-    image: quay.io/keycloak/keycloak:latest
+    image: jboss/keycloak:latest
     environment:
-      DB_VENDOR: POSTGRES
+      DB_VENDOR: postgres
       DB_ADDR: postgres
       DB_DATABASE: ${POSTGRES_DB}
       DB_USER: ${POSTGRES_USER}
